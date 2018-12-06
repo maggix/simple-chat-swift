@@ -27,6 +27,8 @@ $ git submodule update
 $ carthage update --platform iOS
 ```
 
+> Note: if carthage returns an error: `"Incompatible Swift version"`, run the command above with the flag ` --no-use-binaries`:  `carthage update --platform iOS  --no-use-binaries`
+
 ## Provision Services
 
 Our chat app will use the Speech to Text, Conversation, and Text to Speech services. We need to provision each service before using it in our app.
